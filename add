@@ -1,0 +1,19 @@
+function adder() {
+  for (i=1; i <= 4; i++) {
+    if (isFilled("a"+i) === false) {
+      fill("a"+i);
+      document.getElementById('nameOne').value = "";
+      break;
+    }
+  }
+}
+function isFilled(person) {
+  if (document.getElementById(person).innerHTML === "") {
+    return false;
+  } else {
+    true;
+  }
+}
+function fill(person) {  
+  document.getElementById(boi).innerHTML = document.getElementById("nameOne").value;
+  }
